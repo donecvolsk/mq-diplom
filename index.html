@@ -11,14 +11,12 @@
 <body>
     <div class="popup _hidden">
         <div class="popup-window">
-            <a class="popup-window-cross_link" href="#0">
-                <img src="./svg/form-x.svg" class="popup-window-cross_img" alt="Закрывающий крестик">
-            </a>
+            <button class="popup-window-cross-button" type="button"></button>
             <h4 class="popup-window-title">Ваш фидбек</h4>
-            <hr class="trend-title-line">
+            <!--<hr class="trend-title-line">-->
             <form class="popup-window-form">
                 <p class="popup-window-form-text">Как часто вы заходите на сайт?</p>
-                <select class="popup-window-form-choice_field">
+                <select class="popup-window-form-choice-field">
                     <option value="">Почти каждый день</option>
                     <option value="">Раз в несколько дней</option>
                     <option value="">Раз в несколько недель</option>
@@ -38,7 +36,7 @@
                 <p class="popup-window-form-text">Расскажите, какой контент вы хотели бы видеть
                     на нашем сайте?</p>
                 <textarea class="popup-window-form-textarea">Может, больше рецептов?</textarea>
-                <input class="popup-window-form-button" type="submit">
+                <button class="popup-window-form-button" type="button">Отправить</button>
             </form>
         </div>
     </div>
@@ -79,7 +77,7 @@
 
     <section class="trend-container">
         <h2 class="trend-title">Сейчас в тренде</h2>
-        <hr class="trend-title-line">
+
         <div class="trend-items">
             <article class="trend-item box1">
                 <div class="trend-item-content">
@@ -162,7 +160,7 @@
                             проснуться на рассвете</a>
                     </h3>
                     <div class="main-article-conten-data">
-                        <time class="main-article-conten-time">10 июня 2019</time>
+                        <time class="main-article-conten-time" datetime="2023-07-04">10 июня 2019</time>
                         <span class="main-article-conten-autor">Неизвестный автор</span>
                     </div>
                     <p class="main-article-conten-text">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел,
@@ -184,7 +182,7 @@
                         <a class="main-article-content-title-link" href="#0">Йога для начинающих в домашних условиях</a>
                     </h3>
                     <div class="main-article-conten-data">
-                        <time class="main-article-conten-time">10 июня 2019</time>
+                        <time class="main-article-conten-time" datetime="2023-07-04">10 июня 2019</time>
                         <span class="main-article-conten-autor">Неизвестный автор</span>
                     </div>
                     <p class="main-article-conten-text">Расскажем, какие упражнения выбрать и как сделать коврик для
@@ -203,7 +201,7 @@
                         <a class="main-article-content-title-link" href="#0">Лучшие музыкальные фестивали этого лета</a>
                     </h3>
                     <div class="main-article-conten-data">
-                        <time class="main-article-conten-time">10 июня 2019</time>
+                        <time class="main-article-conten-time" datetime="2023-07-04">10 июня 2019</time>
                         <span class="main-article-conten-autor">Неизвестный автор</span>
                     </div>
                     <p class="main-article-conten-text">Лето на носу, а с ним и музыкальные фестивали. На каком же из
@@ -226,7 +224,7 @@
                         <a class="main-article-content-title-link" href="#0">Наукоёмкий подход к кулинарии</a>
                     </h3>
                     <div class="main-article-conten-data">
-                        <time class="main-article-conten-time">10 июня 2019</time>
+                        <time class="main-article-conten-time" datetime="2023-07-04">10 июня 2019</time>
                         <span class="main-article-conten-autor">Неизвестный автор</span>
                     </div>
                     <p class="main-article-conten-text">Узнаем основы проектирования новых пищевых и около-пищевых
@@ -252,7 +250,7 @@
                             интерьера</a>
                     </h3>
                     <div class="main-article-conten-data">
-                        <time class="main-article-conten-time">10 июня 2019</time>
+                        <time class="main-article-conten-time" datetime="2023-07-04">10 июня 2019</time>
                         <span class="main-article-conten-autor">Неизвестный автор</span>
                     </div>
                     <p class="main-article-conten-text">Подушки для дивана целесообразнее заказать в съемных чехлах на
@@ -262,55 +260,54 @@
         </div>
 
         <aside class="aside-container">
-            <section class="aside-new_posts-container">
-                <h4 class="aside-new_posts-title">Новые посты</h4>
-                <hr class="aside-new_posts-title-line">
-                <div class="aside-new_posts-list">
-                    <article class="aside-new_posts-article">
-                        <img class="aside-new_posts-article-image" src="./images/2.jpg" alt="">
-                        <div class="aside-new_posts-article-content">
-                            <time class="aside-new_posts-article-time">14 июня 2019</time>
-                            <h5 class="aside-new_posts-article-content-title">
-                                <a class="aside-new_posts-article-content-title-link" href="#0">10 мест, ради которых
+            <section class="aside-newposts-container">
+                <h4 class="aside-newposts-title">Новые посты</h4>
+                <div class="aside-newposts-list">
+                    <article class="aside-newposts-article">
+                        <img class="aside-newposts-article-image" src="./images/2.jpg" alt="">
+                        <div class="aside-newposts-article-content">
+                            <time class="aside-newposts-article-time" datetime="2023-07-04">14 июня 2019</time>
+                            <h5 class="aside-newposts-article-content-title">
+                                <a class="aside-newposts-article-content-title-link" href="#0">10 мест, ради которых
                                     стоит проснуться</a>
                             </h5>
                         </div>
                     </article>
-                    <article class="aside-new_posts-article">
-                        <img class="aside-new_posts-article-image" src="./images/151.jpg" alt="">
-                        <div class="aside-new_posts-article-content">
-                            <time class="aside-new_posts-article-time">14 июня 2019</time>
-                            <h5 class="aside-new_posts-article-content-title">
-                                <a class="aside-new_posts-article-content-title-link" href="#0">Йога для домашних</a>
+                    <article class="aside-newposts-article">
+                        <img class="aside-newposts-article-image" src="./images/151.jpg" alt="">
+                        <div class="aside-newposts-article-content">
+                            <time class="aside-newposts-article-time" datetime="2023-07-04">14 июня 2019</time>
+                            <h5 class="aside-newposts-article-content-title">
+                                <a class="aside-newposts-article-content-title-link" href="#0">Йога для домашних</a>
                             </h5>
                         </div>
                     </article>
-                    <article class="aside-new_posts-article">
-                        <img class="aside-new_posts-article-image" src="./images/45.jpg" alt="">
-                        <div class="aside-new_posts-article-content">
-                            <time class="aside-new_posts-article-time">14 июня 2019</time>
-                            <h5 class="aside-new_posts-article-content-title">
-                                <a class="aside-new_posts-article-content-title-link" href="#0">как мы превратили
+                    <article class="aside-newposts-article">
+                        <img class="aside-newposts-article-image" src="./images/45.jpg" alt="">
+                        <div class="aside-newposts-article-content">
+                            <time class="aside-newposts-article-time" datetime="2023-07-04">14 июня 2019</time>
+                            <h5 class="aside-newposts-article-content-title">
+                                <a class="aside-newposts-article-content-title-link" href="#0">как мы превратили
                                     классное место в балкон</a>
                             </h5>
                         </div>
                     </article>
-                    <article class="aside-new_posts-article">
-                        <img class="aside-new_posts-article-image" src="./images/501.jpg" alt="">
-                        <div class="aside-new_posts-article-content">
-                            <time class="aside-new_posts-article-time">14 июня 2019</time>
-                            <h5 class="aside-new_posts-article-content-title">
-                                <a class="aside-new_posts-article-content-title-link" href="#0">Кулинарный подход к
+                    <article class="aside-newposts-article">
+                        <img class="aside-newposts-article-image" src="./images/501.jpg" alt="">
+                        <div class="aside-newposts-article-content">
+                            <time class="aside-newposts-article-time" datetime="2023-07-04">14 июня 2019</time>
+                            <h5 class="aside-newposts-article-content-title">
+                                <a class="aside-newposts-article-content-title-link" href="#0">Кулинарный подход к
                                     науке</a>
                             </h5>
                         </div>
                     </article>
-                    <article class="aside-new_posts-article">
-                        <img class="aside-new_posts-article-image" src="./images/7.jpg" alt="">
-                        <div class="aside-new_posts-article-content">
-                            <time class="aside-new_posts-article-time">14 июня 2019</time>
-                            <h5 class="aside-new_posts-article-content-title">
-                                <a class="aside-new_posts-article-content-title-link" href="#0">лучшие прически для
+                    <article class="aside-newposts-article">
+                        <img class="aside-newposts-article-image" src="./images/7.jpg" alt="">
+                        <div class="aside-newposts-article-content">
+                            <time class="aside-newposts-article-time" datetime="2023-07-04">14 июня 2019</time>
+                            <h5 class="aside-newposts-article-content-title">
+                                <a class="aside-newposts-article-content-title-link" href="#0">лучшие прически для
                                     распущенных волос</a>
                             </h5>
                         </div>
@@ -319,16 +316,15 @@
             </section>
 
 
-            <form class="aside-searh-container">               
-                    <span class="aside-searh-visualy_hidden">Введите искомое слово или тексе</span>
-                    <input class="aside-searh-field" type="search" placeholder="Найти...">
+            <form class="aside-searh-container">
+                <span class="aside-searh-visualy_hidden">Введите искомое слово или тексе</span>
+                <input class="aside-searh-field" type="search" placeholder="Найти...">
                 <button class="aside-searh-button">
                     <span class="aside-searh-visualy_hidden">Нажмите для поиска</span>
                 </button>
             </form>
             <section class="aside-mailing-container">
                 <h4 class="aside-mailing-title">Рассылка</h4>
-                <hr class="aside-mailing-title-line">
                 <form class="aside-mailing-form">
                     <label class="aside-mailing-label">
                         <input class="aside-mailing-field" type="email" placeholder="Ваш email-адрес">
@@ -338,7 +334,6 @@
             </section>
             <section class="aside-tags-container">
                 <h4 class="aside-tags-title">Теги</h4>
-                <hr class="aside-tags-title-line">
                 <div class="aside-tags-items">
                     <ul class="aside-tags-list">
                         <li class="aside-tags-item">
@@ -369,9 +364,9 @@
 
                 </div>
             </section>
+
             <section class="aside-themes-container">
                 <h4 class="aside-themes-title">Темы</h4>
-                <hr class="aside-themes-title-line">
                 <ul class="aside-themes-list">
                     <li class="aside-themes-item">
                         <a class="aside-themes-item-link" href="#0">Красота</a>
@@ -405,7 +400,6 @@
 
     <section class="shop-container">
         <h2 class="shop-title">Наши изделия</h2>
-        <hr class="shop-title-line">
         <div class="shop-items">
             <article class="shop-item">
                 <picture>
@@ -413,17 +407,17 @@
                     <source media="(max-width: 640px)" srcset="./images/shop-item-mobile1.jpg">
                     <img class="shop-item-image" src="./images/shop-item-desk1.jpg" alt="Подушка">
                 </picture>
-                
+
                 <div class="shop-item-content">
                     <h3 class="shop-item-content-title">Подушки на диван</h3>
                     <p class="shop-item-content-text">Набор из двух подушек с модными принтами. Видео о создании <a
-                            class="shop-item-content-text_link" href="#0">здесь</a>.</p>
-                    <div class="shop-item-content-buy_container">
-                        <div class="shop-item-content-buy_price">
-                            <div class="old_price">1000 Р</div>
-                            <div class="new_price">800 Р</div>
+                            class="shop-item-content-text-link" href="#0">здесь</a>.</p>
+                    <div class="shop-item-content-buy-container">
+                        <div class="shop-item-content-buy-price">
+                            <div class="old-price">1000 Р</div>
+                            <div class="new-price">800 Р</div>
                         </div>
-                        <button class="shop-item-content-buy_button">В магазин</button>
+                        <button class="shop-item-content-buy-button">В магазин</button>
                     </div>
                 </div>
             </article>
@@ -436,15 +430,15 @@
                 <div class="shop-item-content">
                     <h3 class="shop-item-content-title">Кукла «Зайчик»</h3>
                     <p class="shop-item-content-text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена
-                        <a class="shop-item-content-text_link" href="#0">весенняя серия постов</a> в блоге и несколько
+                        <a class="shop-item-content-text-link" href="#0">весенняя серия постов</a> в блоге и несколько
                         подкастов.
                     </p>
-                    <div class="shop-item-content-buy_container">
-                        <div class="shop-item-content-buy_price">
-                            <div class="old_price"></div>
-                            <div class="new_price">3500 Р</div>
+                    <div class="shop-item-content-buy-container">
+                        <div class="shop-item-content-buy-price">
+                            <div class="old-price"></div>
+                            <div class="new-price">3500 Р</div>
                         </div>
-                        <button class="shop-item-content-buy_button">В магазин</button>
+                        <button class="shop-item-content-buy-button">В магазин</button>
                     </div>
                 </div>
             </article>
@@ -457,14 +451,14 @@
                 <div class="shop-item-content">
                     <h3 class="shop-item-content-title">Шестиугольная рамка</h3>
                     <p class="shop-item-content-text">Необычная рамка для украшения дома из видео <a
-                            class="shop-item-content-text_link" href="#0">«Как сделать рамку из подручных средств за 30
+                            class="shop-item-content-text-link" href="#0">«Как сделать рамку из подручных средств за 30
                             минут»</a></p>
-                    <div class="shop-item-content-buy_container">
-                        <div class="shop-item-content-buy_price">
-                            <div class="old_price">500 Р</div>
-                            <div class="new_price">400 Р</div>
+                    <div class="shop-item-content-buy-container">
+                        <div class="shop-item-content-buy-price">
+                            <div class="old-price">500 Р</div>
+                            <div class="new-price">400 Р</div>
                         </div>
-                        <button class="shop-item-content-buy_button">В магазин</button>
+                        <button class="shop-item-content-buy-button">В магазин</button>
                     </div>
                 </div>
             </article>
