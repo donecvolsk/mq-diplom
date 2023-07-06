@@ -1,25 +1,27 @@
 @font-face {
   font-family: "OpenSans";
-  src: local("OpenSans-Bold"),
-    url("/fonts/OpenSans-Bold.ttf"),
-    url("/fonts/OpenSans-Bold.woff"),
-    url("/fonts/OpenSans-Bold.woff2");
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
+  src:
+    url("../fonts/OpenSans-Bold.ttf"),
+    url("../fonts/OpenSans-Bold.woff"),
+    url("../fonts/OpenSans-Bold.woff2");
 }
 
 @font-face {
   font-family: "OpenSans";
-  src: local("OpenSans-Regular"),
-    url("/fonts/OpenSans-Regular.ttf"),
-    url("/fonts/OpenSans-Regular.woff"),
-    url("/fonts/OpenSans-Regular.woff2");
-  font-weight: normal;
+  font-weight: 400;
+  font-style: normal;
+  src:
+    url("../fonts/OpenSans-Regular.ttf"),
+    url("../fonts/OpenSans-Regular.woff"),
+    url("../fonts/OpenSans-Regular.woff2");
 }
 
 body {
   margin: 0 auto 0 auto;
   padding: 0;
-  font-family: "OpenSans", sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
   box-sizing: border-box;
 }
 
@@ -66,7 +68,7 @@ ul {
 
 .popup-window-title {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   margin: 0;
@@ -97,6 +99,7 @@ ul {
   background-position: right 12px center;
   border: none;
   padding-left: 18px;
+  font-family: "OpenSans", Arial, Helvetica, sans-serif;
   font-size: 13px;
   color: #999999;
   margin: 11px 0 32px 0;
@@ -115,6 +118,11 @@ ul {
 
 .radio-status {
   display: none;
+}
+
+.radio-text {
+  font-family: "OpenSans", Arial, Helvetica, sans-serif;
+  font-size: 13px;
 }
 
 .radio-text::before {
@@ -141,6 +149,7 @@ ul {
   box-sizing: border-box;
   margin: 11px 0 23px 0;
   color: #999999;
+  font-family: "OpenSans", Arial, Helvetica, sans-serif;
   font-size: 13px;
 }
 
@@ -150,8 +159,11 @@ ul {
   background-color: #b59f5b;
   border: none;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
+  font-family: 'OpenSans';
+  text-transform: uppercase;
   color: #fff;
+  cursor: pointer;
 }
 
 .popup-window-form-button:hover {
@@ -231,7 +243,7 @@ ul {
   max-width: 720px;
   font-size: 45px;
   line-height: 75px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   margin-top: 98px;
@@ -249,7 +261,7 @@ ul {
 
 .trend-title {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
@@ -277,12 +289,13 @@ ul {
   display: flex;
   align-items: flex-end;
   width: 25%;
-  min-height: 320px;
+  min-height: 294px;
   background-color: #000000;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   z-index: 0;
+  padding-top: 30px;
 }
 
 .trend-item::before {
@@ -338,14 +351,14 @@ ul {
 
 .trend-item-content-topic-link {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   color: #b59f5b;
   text-transform: uppercase;
 }
 
 .trend-item-content-title {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 24px;
   margin: 0;
   text-transform: uppercase;
@@ -397,7 +410,7 @@ ul {
 
 .main-article-content-topic-link {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   color: #b59f5b;
   text-transform: uppercase;
 }
@@ -410,7 +423,7 @@ ul {
   display: block;
   font-size: 20px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   margin: 8px 0 23px 0;
 }
@@ -435,7 +448,7 @@ ul {
 
 .main-article-conten-autor {
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 
@@ -453,7 +466,7 @@ ul {
 
 .aside-newposts-title {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 29.15px;
   text-transform: uppercase;
   text-align: center;
@@ -496,7 +509,7 @@ ul {
 
 .aside-newposts-article-content-title {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   margin: 0;
 }
 
@@ -563,7 +576,7 @@ ul {
 
 .aside-mailing-title {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 29.15px;
   text-transform: uppercase;
   text-align: center;
@@ -600,9 +613,10 @@ ul {
   background-color: #b59f5b;
   color: #fff;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
 }
 
 .aside-mailing-button:hover {
@@ -626,7 +640,7 @@ ul {
 
 .aside-tags-title {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 29.15px;
   text-transform: uppercase;
   text-align: center;
@@ -655,7 +669,7 @@ ul {
   display: block;
   border: 3px solid rgb(244 247 246);
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   color: #000;
   padding: 4px 11px;
@@ -668,7 +682,7 @@ ul {
 
 .aside-themes-title {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 29.15px;
   text-transform: uppercase;
   text-align: center;
@@ -698,7 +712,7 @@ ul {
 
 .aside-themes-item-link {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   color: #000;
 }
 
@@ -721,7 +735,7 @@ ul {
 
 .shop-title {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
@@ -765,7 +779,7 @@ ul {
 
 .shop-item-content-title {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: left;
   margin: 0 0 8px 0;
@@ -777,12 +791,15 @@ ul {
   text-align: start;
 }
 
-.shop-item-content-text:hover {
-  color: rgba(0, 0, 0, 0.6)
-}
+
 
 .shop-item-content-text-link {
   color: #b59f5b;
+}
+
+.shop-item-content-text-link:hover {
+  text-decoration: underline;
+  color: rgba(181, 159, 91, 0.6)
 }
 
 .shop-item-content-buy-container {
@@ -793,13 +810,13 @@ ul {
 
 .old-price {
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: line-through;
 }
 
 .new-price {
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .shop-item-content-buy-button {
@@ -810,10 +827,11 @@ ul {
   font-size: 14px;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
 }
 
-.shop-item-content-buy_button:hover {
-  background-color: #000
+.shop-item-content-buy-button:hover {
+  background-color: #000;
 }
 
 /*=========End=========*/
@@ -863,8 +881,7 @@ ul {
   text-align: center;
   color: #999999;
   font-size: 12px;
-  font-family: OpenSans, Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /*=======media=========*/
